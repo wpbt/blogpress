@@ -6,8 +6,11 @@
 
 ul {
   list-style: none; }
+  ul li:not(:last-child) {
+    margin-bottom: 0.875em; }
 
 a {
+  display: block;
   text-decoration: none; }
 
 img {
@@ -62,6 +65,8 @@ body {
   font-size: 1em; }
 
 .more-link,
+.sidebar,
+.widget-wrap .entry-title,
 input[type="submit"] {
   font-size: 14px;
   font-size: 0.875em; }
@@ -107,7 +112,8 @@ input[type="submit"] {
 
 input, [type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+textarea {
   border-radius: 45px;
   -webkit-border-radius: 45px;
   -moz-border-radius: 45px;
@@ -185,8 +191,7 @@ p:last-child,
 .site-content #secondary {
   padding: 0 20px; }
 
-.site-content #primary,
-.site-content #secondary {
+.site-content__inner-container {
   margin: 0 -20px; }
 
 .entry-footer,
@@ -207,6 +212,64 @@ p:last-child,
 nav.navigation-post {
   margin-top: 28px;
   padding: 28px 0; }
+
+.sidebar .widget-wrap:not(:last-child) {
+  border-bottom: 1px solid;
+  padding-bottom: 35px;
+  margin-bottom: 35px; }
+.sidebar .social-widgets ul {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .sidebar .social-widgets ul li {
+    margin-bottom: 0;
+    margin-right: 5px; }
+    .sidebar .social-widgets ul li:before {
+      content: "\635";
+      font-family: 'iconsax';
+      font-family: 'iconsax' !important;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      font-weight: normal;
+      font-style: normal; }
+    .sidebar .social-widgets ul li a {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -o-border-radius: 50%;
+      display: block;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      width: 45px; }
+      .sidebar .social-widgets ul li a .fab {
+        line-height: inherit; }
+    .sidebar .social-widgets ul li:last-child {
+      margin-right: 0; }
+
+.instagram ul {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .instagram ul li {
+    width: 33.333%; }
+    .instagram ul li a {
+      display: block;
+      padding: 5px; }
 
 .content__image {
   position: relative; }
@@ -387,6 +450,9 @@ ul.author__sub-menu {
   input[type="submit"] {
     margin-top: 28px; }
 
+  .post-thumbnail {
+    margin-bottom: 28px; }
+
   .author-list {
     padding-top: 70px; }
 
@@ -419,6 +485,10 @@ body {
 .content__image .entry-container .entry-title {
   color: #fff; }
 
+/* ====================== Link Color ====================== */
+a {
+  color: #111; }
+
 /* ====================== Link Hover Color ====================== */
 a:hover, a:focus {
   color: #4AB4F0; }
@@ -427,7 +497,7 @@ a:hover, a:focus {
 .entry-meta a,
 .entry-title a,
 .navigation-post a {
-  color: #000; }
+  color: #111; }
 
 /* ====================== Secondary Link Hover Color ====================== */
 .entry-meta a:hover, .entry-meta a:focus,
@@ -439,29 +509,43 @@ a:hover, a:focus {
 
 /* ====================== Border Color ====================== */
 nav.navigation-post,
+.sidebar .widget-wrap:not(:last-child),
 input, [type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+textarea {
   border-color: #e6e6e6; }
 
 /* ====================== Button Background Color ====================== */
 .more-link,
+.sidebar .social-widgets ul a,
 input[type="submit"] {
   background-color: #4AB4F0; }
 
+input:focus, [type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #4AB4F0; }
+
 /* ====================== Button Text Color ====================== */
 .more-link,
+.sidebar .social-widgets ul a,
 input[type="submit"] {
   color: #fff; }
 
 /* ====================== Button Hover Background Color ====================== */
 .more-link:hover, .more-link:focus,
+.sidebar .social-widgets ul a:hover,
+.sidebar .social-widgets ul a:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
   background-color: #333; }
 
 /* ====================== Button Hover Text Color ====================== */
 .more-link:hover, .more-link:focus,
+.sidebar .social-widgets ul a:hover,
+.sidebar .social-widgets ul a:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
   color: #fff; }

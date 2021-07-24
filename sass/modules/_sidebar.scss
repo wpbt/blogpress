@@ -1,0 +1,57 @@
+.sidebar {
+    .widget-wrap:not(:last-child) {
+        border-bottom: 1px solid;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+    }
+
+    .social-widgets ul {
+        @include d-flex;
+        @include align-items-center;
+        li {
+            margin-bottom: 0;
+            margin-right: 5px;
+            &:before {
+                content: "\635";
+                font-family: 'iconsax';
+                font-family: 'iconsax' !important;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                font-weight: normal;
+                font-style: normal;
+            }
+            a {
+                @include border(50%);
+                display: block;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                width: 45px;
+                .fab {
+                    line-height: inherit;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.instagram {
+    ul {
+        @include d-flex;
+        flex-wrap: wrap;
+        @include justify-content-between;
+        li {
+            width: 33.333%;
+            a {
+                display: block;
+                padding: 5px;
+            }
+        }
+    }
+}

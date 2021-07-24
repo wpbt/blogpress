@@ -5,9 +5,13 @@
 
 ul {
     list-style: none;
+    li:not(:last-child) {
+        margin-bottom: 0.875em;
+    }
 }
 
 a {
+    display: block;
     text-decoration: none;
 }
 
