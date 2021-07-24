@@ -1,0 +1,20 @@
+input,[type="text"],
+input[type="password"],
+input[type="email"] {
+    @include border(45px);
+    border: 1px solid;
+    background-color: transparent;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+
+.more-link,
+input[type="submit"] {
+    border: 1px solid transparent;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 14px;
+    padding: 12px 35px;
+    width: auto;
+}

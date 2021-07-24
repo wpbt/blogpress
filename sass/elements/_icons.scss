@@ -1,0 +1,36 @@
+.cat-links a:before {
+    content: "\f07c";
+}
+
+.navigation-post a.nav-prev:before {
+    content: "\f30a";
+}
+
+.navigation-post a.nav-next:after {
+    content: "\f30b";
+}
+
+.cat-links a:before,
+.navigation-post a:before,
+.navigation-post a:after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navigation-post a:before,
+.navigation-post a:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+  }
+
+.cat-links a:before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 400; 
+}
+
+// .navigation-post a:before {
+//     font-family: "Font Awesome 5 Brands"; 
+// }

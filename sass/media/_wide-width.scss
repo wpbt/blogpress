@@ -1,0 +1,65 @@
+@include media(wide-width) {
+
+    h1 {
+        font-size: 56px;
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-size: 2.25rem;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-size: 1.125rem;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-size: 1rem;
+    }
+
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .content__image {
+        .entry-container {
+            padding-bottom: 120px;
+            padding-top: 120px;
+        }
+    }
+
+    .site-content {
+        padding: 70px 0;
+    }
+
+    .entry-footer,
+    .entry-summary,
+    .entry-content,
+    .more-link,
+    input[type="submit"] {
+        margin-top: 28px;
+    }
+
+    .author-list {
+        padding-top: 70px;
+    }
+
+    nav.navigation-post {
+        margin-top: 70px;
+        padding: 70px 0;
+    }
+}   

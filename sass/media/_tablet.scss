@@ -1,0 +1,25 @@
+@include media(tablet) {
+    h1 {
+        font-size: 48px;
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-size: 2.25rem;
+    }
+
+    .author-list {
+        padding-top: 56px;
+    }
+
+    nav.navigation-post {
+        margin-top: 56px;
+        padding: 56px 0;
+    }
+}

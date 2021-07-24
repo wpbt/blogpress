@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 31px;
+    margin-top: 31px;
+}
+
+h1:first-child, 
+h2:first-child, 
+h3:first-child, 
+h4:first-child, 
+h5:first-child, 
+h6:first-child {
+    margin-top: 0; 
+}
+
+p:last-child, 
+.tag-links a:last-child, 
+.comment-form p:last-of-type,
+.entry-meta span:last-child {
+    margin-bottom: 0;
+}
+
+.content__image .entry-container {
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+.site-content {
+    #primary,
+    #secondary {
+        padding: 0 20px;
+    }
+}
+
+.site-content #primary, 
+.site-content #secondary {
+    margin: 0 -20px;
+}
+
+.entry-footer,
+.entry-summary,
+.entry-content {
+    margin-top: 14px;
+}
+
+.post-thumbnail {
+    margin-bottom: 14px;
+}
+
+.entry-meta a {
+    margin-right: 5px;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:before {
+        margin-right: 5px;
+    }
+}
+
+nav.navigation-post {
+    margin-top: 28px;
+    padding: 28px 0;
+}

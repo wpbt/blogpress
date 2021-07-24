@@ -1,0 +1,32 @@
+@include media(desktop) {
+
+    body {
+        font-size: 18px;
+        font-size: 1.125em;
+    }
+
+    .site-content__inner-container {
+        @include d-flex;
+        #primary {
+            max-width: 920px;
+            width: 70%;
+        }
+        
+        .sidebar {
+            max-width: 345px;
+            width: 30%;
+        }
+    }
+
+    .entry-footer,
+    .entry-summary,
+    .entry-content,
+    .more-link,
+    input[type="submit"] {
+        margin-top: 21px;
+    }
+
+    .post-thumbnail {
+        margin-bottom: 21px;
+    }
+}

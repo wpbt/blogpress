@@ -1,0 +1,99 @@
+/* ====================== Primary Background Color ====================== */
+
+body {
+    background-color: map-get($theme-background-color , primary-background-color );
+}
+
+/* ====================== Secondary Background Color ====================== */
+
+#respond,
+.comment-form p label  {
+    background-color: map-get($theme-background-color, secondary-background-color );
+} 
+
+/* ====================== Dark Background Color ====================== */
+
+.content__image:after {
+    background-color: map-get($theme-background-color, dark-background-color );
+}
+
+/* ====================== Primary Color ====================== */
+
+body {
+    color: map-get($theme-color, primary-color );
+}
+
+/* ====================== Content Color White ====================== */
+
+.content__image .entry-container,
+.content__image .entry-container .entry-title {
+    color: map-get($theme-color, content-color-white );
+}
+
+/* ====================== Link Hover Color ====================== */
+a {
+    &:hover,
+    &:focus {
+        color: map-get($theme-color, link-hover-color );
+    }
+}
+/* ====================== Secondary Link Color ====================== */
+.entry-meta a,
+.entry-title a,
+.navigation-post a {
+    color: map-get($theme-color, secondary-link-color );
+}
+
+/* ====================== Secondary Link Hover Color ====================== */
+.entry-meta a,
+.entry-title a,
+.navigation-post a {
+    &:hover,
+    &:focus {
+        color: map-get($theme-color, secondary-link-hover-color );
+    }
+}
+
+/* ====================== Border Color ====================== */
+
+nav.navigation-post,
+input,[type="text"],
+input[type="password"],
+input[type="email"] {
+    border-color: map-get($theme-color , border-color );
+}
+
+/* ====================== Button Background Color ====================== */
+
+.more-link,
+input[type="submit"] {
+    background-color: map-get($theme-button-color, button-background-color );
+}
+
+/* ====================== Button Text Color ====================== */
+
+.more-link,
+input[type="submit"] {
+   color: map-get($theme-button-color, button-text-color );
+}
+
+/* ====================== Button Hover Background Color ====================== */
+
+.more-link,
+input[type="submit"] {
+    &:hover,
+    &:focus {
+        background-color: map-get($theme-button-color, button-hover-background-color );
+    }
+}
+
+
+/* ====================== Button Hover Text Color ====================== */
+
+.more-link,
+input[type="submit"] {
+    &:hover,
+    &:focus {
+        color: map-get($theme-button-color, button-hover-text-color );
+    }
+}

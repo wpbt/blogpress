@@ -1,0 +1,39 @@
+.content__image {
+    position: relative;
+    &:before {
+        background: url('../assets/images/alleys.jpg');
+        background-position: center center;
+        background-size: cover;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &:after {
+        content: "";
+        left: 0;
+        height: 100%;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+    }
+
+    .entry-container {
+        text-align: center;
+        .entry-header {
+            position: relative;
+            z-index: 1;
+            .entry-title {
+                letter-spacing: 2px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
