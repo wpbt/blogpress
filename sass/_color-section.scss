@@ -1,5 +1,6 @@
 /* ====================== Primary Background Color ====================== */
-body {
+body,
+.site-header.fixed:after {
     background-color: map-get($theme-background-color , primary-background-color );
 }
 
@@ -10,7 +11,8 @@ body {
 } 
 
 /* ====================== Dark Background Color ====================== */
-.content__image:after {
+.content__image:after,
+.site-header:after {
     background-color: map-get($theme-background-color, dark-background-color );
 }
 
@@ -19,19 +21,15 @@ body {
     color: map-get($theme-color, primary-color );
 }
 
-/* ====================== Content Color White ====================== */
-.content__image .entry-container,
-.content__image .entry-container .entry-title {
-    color: map-get($theme-color, content-color-white );
-}
-
 /* ====================== Link Color ====================== */
 a {
     color: map-get($theme-color, link-color );
 }
 
 /* ====================== Link Hover Color ====================== */
-a {
+a,
+.site-header:not(.fixed) .site-branding .site-title a,
+.site-header:not(.fixed) .main-navigation ul li a {
     &:hover,
     &:focus {
         color: map-get($theme-color, link-hover-color );
@@ -105,4 +103,12 @@ input[type="submit"] {
     &:focus {
         color: map-get($theme-button-color, button-hover-text-color );
     }
+}
+
+/* ====================== Content Color White ====================== */
+.content__image .entry-container,
+.site-header:not(.fixed) .site-branding .site-title a,
+.site-header:not(.fixed) .main-navigation ul li a,
+.content__image .entry-container .entry-title {
+    color: map-get($theme-color, content-color-white );
 }

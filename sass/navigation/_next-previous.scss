@@ -25,13 +25,18 @@ nav.navigation-post {
 }
 
 .author-list {
-    padding-top: 42px;
-    .author-description {
-        @include d-flex;
-        @include justify-content-center;
+    > li {
+        padding-top: 42px;
+    }
+        .author-description {
+            @include d-flex;
+            @include justify-content-center;
         .author__image {
             margin-right: 25px;
-            max-width: 100px;
+            width: 100px;
+        }
+        .author__content {
+            width: 100%;
         }
     }
 }

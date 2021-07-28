@@ -1,0 +1,6 @@
+.cat-links {
+    @include d-flex;
+    a:not(:last-child) {
+        margin-right: 15px;
+    }
+}
