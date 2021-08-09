@@ -28,6 +28,8 @@ a,
 .entry-meta a:before,
 .more-link,
 .site-header,
+.search-container,
+.show-container .search-container,
 .site-header:after,
 input[type="submit"] {
     @include transition(0.3s ease-in-out);

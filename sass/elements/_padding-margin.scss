@@ -37,10 +37,6 @@ p:last-child,
     }
 }
 
-.site-content__inner-container {
-    margin: 0 -20px;
-}
-
 .entry-footer,
 .entry-summary,
 .entry-content {
@@ -64,4 +60,27 @@ p:last-child,
 nav.navigation-post {
     margin-top: 28px;
     padding: 28px 0;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.site-content {
+    padding: 70px 0;
+}
+
+#primary {
+    padding: 0;
+}
+
+.sidebar {
+    margin-top: 42px;
+    padding: 0;
+}
+
+.hentry,
+.site-footer .widget {
+    margin-bottom: 35px;
 }

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
@@ -11,7 +12,6 @@ ul {
 }
 
 a {
-    display: block;
     text-decoration: none;
 }
 

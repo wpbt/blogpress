@@ -42,10 +42,6 @@
         }
     }
 
-    .site-content {
-        padding: 70px 0;
-    }
-
     .entry-footer,
     .entry-summary,
     .entry-content,
@@ -65,5 +61,9 @@
     nav.navigation-post {
         margin-top: 70px;
         padding: 70px 0;
+    }
+
+    .site-footer {
+        padding-top: 70px;
     }
 }   

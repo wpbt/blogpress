@@ -7,15 +7,27 @@
 
     .site-content__inner-container {
         @include d-flex;
+        @include justify-content-between;
         #primary {
             max-width: 920px;
+            margin-left: -20px;
             width: 70%;
         }
         
         .sidebar {
-            max-width: 345px;
+            max-width: 540px;
+            margin-right: -20px;
+            margin-top: 0;
             width: 30%;
         }
+    }
+    #primary,
+    .sidebar {
+        padding: 0 20px;
+    }
+
+    #respond {
+        padding: 70px;
     }
 
     .entry-footer,
@@ -26,7 +38,21 @@
         margin-top: 21px;
     }
 
+    .hentry,
+    .site-footer .widget {
+        margin-bottom: 42px;
+    }
+
     .post-thumbnail {
         margin-bottom: 21px;
+    }
+
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .site-content {
+        padding: 70px 0;
     }
 }

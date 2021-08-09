@@ -1,0 +1,23 @@
+.footer-widget-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+
+    .galleries ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+
+        li {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.site-footer {
+    border-top: 1px solid;
+
+    .site-generator {
+        padding: 2em 0;
+    }
+}
